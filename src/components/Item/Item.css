@@ -1,0 +1,19 @@
+.item {
+    color: white;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #282c34;
+}
+
+.item img {
+    height: 24px;
+    width: 24px;
+}
+
+.item p {
+    margin: 0;
+}

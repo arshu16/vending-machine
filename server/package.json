@@ -1,0 +1,34 @@
+{
+  "name": "vending-machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all -p nodeRun watch",
+    "nodeRun": "webpack && nodemon -L --inspect=0.0.0.0:9229 build/app.bundle.js",
+    "watch": "webpack --watch --mode development",
+    "migrate": "node ./db/scripts/generateConfig.js && node_modules/.bin/sequelize db:migrate",
+    "seed": "node ./db/scripts/generateConfig.js && node_modules/.bin/sequelize db:seed:all",
+    "seed-down": "node ./db/scripts/generateConfig.js && node_modules/.bin/sequelize db:seed:undo:all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "pg": "^7.10.0",
+    "sequelize": "^5.8.5",
+    "sequelize-cli": "^5.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^1.19.0",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

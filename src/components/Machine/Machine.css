@@ -1,0 +1,43 @@
+.machine {
+    display: flex;
+    padding: 24px;
+    justify-content: space-around;
+}
+
+.box {
+    width: 80%;
+    height: 450px;
+    max-width: 320px;
+    background: #cccccc;
+    border-radius: 10px;
+    padding-top: 3em;
+}
+
+.legs {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.leg-left, .leg-right {
+    background: #999999;
+    height: 3em;
+    width: 1em;
+    display: inline-block;
+}
+
+.leg-right {
+    float: right;
+    margin-right: 1em;
+}
+
+.leg-left {
+    float: left;
+    margin-left: 1em;
+}
+
+.attribution {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}

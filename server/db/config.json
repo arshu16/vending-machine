@@ -1,0 +1,1 @@
+{"development":{"username":"localdbuser","database":"vendingMachine","password":"localdbpassword","host":"postgres","dialect":"postgres"}}

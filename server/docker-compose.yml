@@ -1,0 +1,30 @@
+version: '3.3'
+services:
+  server:
+    container_name: vending-machine
+    build:
+      context: .
+    volumes:
+      - ./:/app/
+      - ./server:/app/server
+    depends_on:
+      - postgres
+    ports:
+      - '8080:8080'
+      - '9229:9229'
+    networks:
+      - default
+    links:
+      - postgres
+    restart: always
+  postgres:
+    container_name: vending-machine-db
+    image: postgres
+    networks:
+      - default
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: 'vendingMachine'
+      POSTGRES_USER: 'localdbuser'
+      POSTGRES_PASSWORD: 'localdbpassword'

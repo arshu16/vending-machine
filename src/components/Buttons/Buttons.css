@@ -1,0 +1,70 @@
+.buttons {
+    color: white;
+    background: gray;
+    padding: 8px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 12px;
+}
+
+.buttons .display {
+    padding: 12px;
+    background: #282c34;
+    border-radius: 20px;
+}
+
+.buttons .change-return-slot {
+    padding: 12px;
+    background: #282c34;
+}
+
+.buttons .change-return-slot .change {
+    margin: 12px 0 0 0;
+}
+
+.buttons .change-return-slot .change-return-title {
+    margin: 0;
+    color: #ffbb42;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.buttons .item-buttons {
+    display: flex;
+}
+
+.buttons .item-buttons button{
+    cursor: pointer;
+    width: auto;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    color: #fff;
+    background: #4c7737;
+    opacity: 1;
+    transition: opacity .2s ease;
+    border: none;
+    outline: none;
+}
+
+.buttons button:disabled{
+    cursor: not-allowed !important;
+    background: #999 !important;
+}
+
+.buttons .get-return-change button {
+    cursor: pointer;
+    width: auto;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    color: #fff;
+    padding: 9px 24px;
+    background: #e13c4c;
+    opacity: 1;
+    transition: opacity .2s ease;
+    border: none;
+    outline: none
+}
